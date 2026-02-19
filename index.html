@@ -7,16 +7,54 @@
       content="width=device-width, initial-scale=1.0"
     />
     <title>Miami</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,700;1,14..32,700&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
-      href="src/styles/main.scss"
+      href="styles.css"
     />
-    <script
-      src="src/scripts/main.js"
-      defer
-    ></script>
   </head>
   <body>
-    <h1>Miami</h1>
+    <header class="header">
+      <nav class="header__nav">
+        <a href="#">
+          <img class="header__logo" src="src/images/logo.svg"
+          alt="logo" />
+        </a>
+        <div class="header__buttons buttons">
+          <a class="buttons__item" href="#">
+            <img class="buttons__icon buttons__icon--call" src="src/images/call_icon.svg"
+            alt="call button" />
+          </a>
+          <span class="buttons__label">+1 234 555-55-55</span>
+          <a class="buttons__item" href="#menu">
+            <img class="buttons__icon buttons__icon--burger" src="src/images/burger_icon.svg"
+            alt="menu" />
+          </a>
+        </div>
+      </nav>
+      <h1 class="title"><p>Your senses.</p><p>Set free.</p></h1>
+    </header>
+
+    <nav class="menu" id="menu">
+      <div class="menu__top">
+        <a href="#">
+          <img class="menu__logo" src="src/images/logo.svg"
+          alt="logo">
+        </a>
+        <a class="menu__close-button" href="#"><img src="src/images/close_button.svg" alt="close menu"></a>
+      </div>
+      <ul class="menu__list">
+        <li class="menu__list-item"><a href="#">Recommended</a></li>
+        <li class="menu__list-item"><a href="#">Categories</a></li>
+        <li class="menu__list-item"><a href="#">About us</a></li>
+        <li class="menu__list-item"><a href="#">Contact us</a></li>
+      </ul>
+      <div class="menu__contact">
+        <p>+1 234 555-55-55</p>
+        <p class="menu__contact--underline"><a href="#">Call to order</a></p>
+      </div>
+    </nav>
   </body>
 </html>
