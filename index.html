@@ -6,7 +6,9 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Miami</title>
+    <link rel="icon" type="image/svg"
+     href="src/images/logo.svg" />
+    <title>Bang & Olufses</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,700;1,14..32,700&display=swap" rel="stylesheet">
@@ -15,19 +17,19 @@
       href="styles.css"
     />
   </head>
-  <body>
+  <body class="page">
     <header class="header">
       <nav class="header__nav">
-        <a href="#">
+        <a href="/">
           <img class="header__logo" src="src/images/logo.svg"
           alt="logo" />
         </a>
         <div class="header__buttons buttons">
-          <a class="buttons__item" href="#">
+          <a class="buttons__item" href="tel:+12345555555">
             <img class="buttons__icon buttons__icon--call" src="src/images/call_icon.svg"
             alt="call button" />
+            <span class="buttons__label">+1 234 555-55-55</span>
           </a>
-          <span class="buttons__label">+1 234 555-55-55</span>
           <a class="buttons__item" href="#menu">
             <img class="buttons__icon buttons__icon--burger" src="src/images/burger_icon.svg"
             alt="menu" />
@@ -39,7 +41,7 @@
 
     <nav class="menu" id="menu">
       <div class="menu__top">
-        <a href="#">
+        <a href="/">
           <img class="menu__logo" src="src/images/logo.svg"
           alt="logo">
         </a>
