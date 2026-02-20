@@ -254,4 +254,130 @@ a {
   text-decoration: underline;
 }
 
+.page {
+  scroll-behavior: smooth;
+}
+
+.content {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media (min-width: 744px) {
+  .content {
+    padding-left: 72px;
+    padding-right: 72px;
+  }
+}
+@media (min-width: 1260px) {
+  .content {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
+
+.products {
+  margin-top: 48px;
+}
+@media (min-width: 744px) {
+  .products {
+    margin-top: 56px;
+  }
+}
+@media (min-width: 1260px) {
+  .products {
+    margin-top: 56px;
+  }
+}
+.products {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+@media (min-width: 744px) {
+  .products {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 24px;
+  }
+}
+@media (min-width: 1260px) {
+  .products {
+    grid-template-columns: repeat(12, 1fr);
+    gap: 24px;
+  }
+}
+.products__item {
+  grid-column: 1/-1;
+  padding-top: 40px;
+}
+@media (min-width: 744px) {
+  .products__item {
+    padding-top: 56px;
+  }
+}
+@media (min-width: 1260px) {
+  .products__item {
+    grid-column: span 4;
+  }
+}
+.products__image {
+  width: 100%;
+  height: auto;
+}
+.products__name {
+  font-family: Manrope;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: 0px;
+  padding-top: 24px;
+  text-transform: uppercase;
+}
+.products__price {
+  font-family: Manrope;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0px;
+  padding-top: 12px;
+}
+
+.section {
+  padding-top: 64px;
+}
+@media (min-width: 744px) {
+  .section {
+    padding-top: 120px;
+  }
+}
+@media (min-width: 1260px) {
+  .section {
+    padding-top: 120px;
+  }
+}
+.section__title {
+  font-family: Manrope;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0px;
+}
+@media (min-width: 744px) {
+  .section__title {
+    font-size: 40px;
+  }
+}
+@media (min-width: 1260px) {
+  .section__title {
+    font-size: 48px;
+  }
+}
+.section__text {
+  font-family: Manrope;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.15px;
+  padding-top: 8px;
+}
+
 /*# sourceMappingURL=styles.css.map */

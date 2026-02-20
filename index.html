@@ -10,7 +10,7 @@
      href="src/images/logo.svg" />
     <title>Bang & Olufses</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,700;1,14..32,700&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
@@ -48,7 +48,7 @@
         <a class="menu__close-button" href="#"><img src="src/images/close_button.svg" alt="close menu"></a>
       </div>
       <ul class="menu__list">
-        <li class="menu__list-item"><a href="#">Recommended</a></li>
+        <li class="menu__list-item"><a href="#recommended">Recommended</a></li>
         <li class="menu__list-item"><a href="#">Categories</a></li>
         <li class="menu__list-item"><a href="#">About us</a></li>
         <li class="menu__list-item"><a href="#">Contact us</a></li>
@@ -58,5 +58,42 @@
         <p class="menu__contact--underline"><a href="#">Call to order</a></p>
       </div>
     </nav>
+
+    <main class="content">
+      <section class="section" id="recommended">
+        <h2 class="section__title">Recommended</h2>
+        <div class="recommended__products products">
+          <div class="products__item">
+            <img class="products__image" src="src/images/recommended/one.jpg"
+            alt="product image">
+            <p class="products__name">Beosound A5</p>
+            <p class="section__text">Huge sound anywhere – in the home or outdoors. Beosound A5 is a Wi-Fi
+              and Bluetooth speaker with long-lasting battery and wireless charging built in.
+            </p>
+            <p class="products__price">$ 1299,00</p>
+          </div>
+
+          <div class="products__item">
+            <img class="products__image" src="src/images/recommended/two.jpg"
+            alt="product image">
+            <p class="products__name">Beoplay HX</p>
+            <p class="section__text">Wireless noise-cancelling headphones. Listen in comfort whether
+              you're on a call, working from home or taking a moment for yourself.
+            </p>
+            <p class="products__price">$ 499,00</p>
+          </div>
+
+          <div class="products__item">
+            <img class="products__image" src="src/images/recommended/three.jpg"
+            alt="product image">
+            <p class="products__name">Beosound Theatre</p>
+            <p class="section__text">Four patent-pending acoustic innovations in one sleek soundbar
+              envelop you in sound from every angle. Made to fit any TV, and last for generations.
+            </p>
+            <p class="products__price">$ 3199,00</p>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
