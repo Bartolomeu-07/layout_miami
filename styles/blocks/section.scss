@@ -1,14 +1,32 @@
 @use '../utils/mixins.scss' as *;
 
 .section {
-  padding-top: 64px;
+  &__recommended {
+    padding-top: 64px;
 
-  @include for-tablet {
-    padding-top: 120px;
+    @include for-tablet {
+      padding-top: 120px;
+    }
+
+    @include for-desktop {
+      padding-top: 120px;
+    }
   }
 
-  @include for-desktop {
-    padding-top: 120px;
+  &__categories {
+    padding-top: 96px;
+
+    @include for-tablet {
+      padding-top: 120px;
+    }
+
+    @include for-desktop {
+      padding-top: 120px;
+    }
+  }
+
+  &__about {
+    padding: 0;
   }
 
   &__title {

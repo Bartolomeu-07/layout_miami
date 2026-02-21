@@ -24,14 +24,14 @@
           <img class="header__logo" src="src/images/logo.svg"
           alt="logo" />
         </a>
-        <div class="header__buttons buttons">
-          <a class="buttons__item" href="tel:+12345555555">
-            <img class="buttons__icon buttons__icon--call" src="src/images/call_icon.svg"
+        <div class="header__icons icons">
+          <a class="icons__item" href="tel:+12345555555">
+            <img class="icons__icon icons__icon--call" src="src/images/call_icon.svg"
             alt="call button" />
-            <span class="buttons__label">+1 234 555-55-55</span>
+            <span class="icons__label">+1 234 555-55-55</span>
           </a>
-          <a class="buttons__item" href="#menu">
-            <img class="buttons__icon buttons__icon--burger" src="src/images/burger_icon.svg"
+          <a class="icons__item" href="#menu">
+            <img class="icons__icon icons__icon--burger" src="src/images/burger_icon.svg"
             alt="menu" />
           </a>
         </div>
@@ -49,7 +49,7 @@
       </div>
       <ul class="menu__list">
         <li class="menu__list-item"><a href="#recommended">Recommended</a></li>
-        <li class="menu__list-item"><a href="#">Categories</a></li>
+        <li class="menu__list-item"><a href="#categories">Categories</a></li>
         <li class="menu__list-item"><a href="#">About us</a></li>
         <li class="menu__list-item"><a href="#">Contact us</a></li>
       </ul>
@@ -60,7 +60,7 @@
     </nav>
 
     <main class="content">
-      <section class="section" id="recommended">
+      <section class="section__recommended" id="recommended">
         <h2 class="section__title">Recommended</h2>
         <div class="recommended__products products">
           <div class="products__item">
@@ -93,6 +93,37 @@
             <p class="products__price">$ 3199,00</p>
           </div>
         </div>
+      </section>
+
+      <section class="section__categories" id="categories">
+        <h2 class="section__title">
+          <p>Sound. Vision.</p>
+          <p>It’s your pick.</p>
+        </h2>
+        <div class="categories">
+          <img class="categories__image" src="src/images/categories/one.jpg"
+          alt="category image">
+          <img class="categories__image" src="src/images/categories/two.jpg"
+          alt="category image">
+          <p class="categories__name">Portable speakers</p>
+          <img class="categories__image" src="src/images/categories/three.jpg"
+          alt="category image">
+          <img class="categories__image" src="src/images/categories/four.jpg"
+          alt="category image">
+          <p class="categories__name">Earphones</p>
+          <img class="categories__image" src="src/images/categories/five.jpg"
+          alt="category image">
+          <img class="categories__image" src="src/images/categories/six.jpg"
+          alt="category image">
+          <p class="categories__name">Smart Home</p>
+          <button class="button categories__button">View all</button>
+        </div>
+      </section>
+
+      <section class="section__about">
+        <img class="about__image" src="src/images/about/one.jpg"
+        alt="about">
+        <h2 class="section__title">Timeless, for 50 years and counting</h2>
       </section>
     </main>
   </body>
