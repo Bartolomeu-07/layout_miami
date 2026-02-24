@@ -2,31 +2,31 @@
 
 .section {
   &__recommended {
-    padding-top: 64px;
+    padding: 64px 20px 0;
 
     @include for-tablet {
-      padding-top: 120px;
+      padding: 120px 20px 0;
     }
 
     @include for-desktop {
-      padding-top: 120px;
+      padding: 120px 20px 0;
     }
   }
 
   &__categories {
-    padding-top: 96px;
+    padding: 96px 20px 0;
 
     @include for-tablet {
-      padding-top: 120px;
+      padding: 120px 20px 0;
     }
 
     @include for-desktop {
-      padding-top: 120px;
+      padding: 120px 20px 0;
     }
   }
 
   &__about {
-    padding: 0;
+    padding-top: 96px;
   }
 
   &__title {

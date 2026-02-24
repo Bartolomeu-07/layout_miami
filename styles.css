@@ -220,23 +220,6 @@ a {
   scroll-behavior: smooth;
 }
 
-.content {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-@media (min-width: 744px) {
-  .content {
-    padding-left: 72px;
-    padding-right: 72px;
-  }
-}
-@media (min-width: 1260px) {
-  .content {
-    padding-left: 120px;
-    padding-right: 120px;
-  }
-}
-
 .products {
   margin-top: 48px;
 }
@@ -304,33 +287,33 @@ a {
 }
 
 .section__recommended {
-  padding-top: 64px;
+  padding: 64px 20px 0;
 }
 @media (min-width: 744px) {
   .section__recommended {
-    padding-top: 120px;
+    padding: 120px 20px 0;
   }
 }
 @media (min-width: 1260px) {
   .section__recommended {
-    padding-top: 120px;
+    padding: 120px 20px 0;
   }
 }
 .section__categories {
-  padding-top: 96px;
+  padding: 96px 20px 0;
 }
 @media (min-width: 744px) {
   .section__categories {
-    padding-top: 120px;
+    padding: 120px 20px 0;
   }
 }
 @media (min-width: 1260px) {
   .section__categories {
-    padding-top: 120px;
+    padding: 120px 20px 0;
   }
 }
 .section__about {
-  padding: 0;
+  padding-top: 96px;
 }
 .section__title {
   font-family: Manrope;
@@ -483,6 +466,74 @@ a {
     visibility: hidden;
     display: inline;
     order: -1;
+  }
+}
+
+.about__image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+@media (min-width: 744px) {
+  .about__image {
+    height: 400px;
+  }
+}
+@media (min-width: 1260px) {
+  .about__image {
+    height: 460px;
+  }
+}
+.about__content {
+  padding: 48px 20px;
+  background-color: #FCFAEF;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+@media (min-width: 744px) {
+  .about__content {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 24px;
+  }
+}
+@media (min-width: 1260px) {
+  .about__content {
+    grid-template-columns: repeat(12, 1fr);
+    gap: 24px;
+  }
+}
+.about__content > * {
+  grid-column: 1/-1;
+}
+@media (min-width: 744px) {
+  .about__content {
+    padding: 120px 72px;
+  }
+  .about__content > * {
+    grid-column: span 3;
+  }
+}
+@media (min-width: 1260px) {
+  .about__content {
+    padding: 120px 120px;
+  }
+  .about__content > * {
+    grid-column: span 6;
+  }
+}
+.about__text {
+  padding-top: 24px;
+}
+@media (min-width: 744px) {
+  .about__text {
+    padding-top: 0;
+  }
+}
+@media (min-width: 1260px) {
+  .about__text {
+    padding-top: 0;
   }
 }
 
