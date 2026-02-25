@@ -42,13 +42,13 @@
       width: 32px;
       height: 32px;
 
-      &--call:hover + .buttons__label {
+      &--call:hover + .icons__label {
         opacity: 1;
         visibility: visible;
       }
 
       &--burger:hover {
-        content: url("../../src/images/burger_icon_hover.svg");
+        content: url(../../src/images/burger_icon_hover.svg);
       }
     }
 
