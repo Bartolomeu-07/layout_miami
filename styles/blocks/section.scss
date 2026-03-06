@@ -29,6 +29,18 @@
     padding-top: 96px;
   }
 
+  &__contact {
+    padding: 64px 20px 24px;
+
+    @include for-tablet {
+      padding: 120px 72px 32px;
+    }
+
+    @include for-desktop {
+      padding: 120px 120px 56px;
+    }
+  }
+
   &__title {
     font-family: Manrope;
     font-weight: 700;
